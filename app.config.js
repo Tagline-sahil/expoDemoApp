@@ -33,6 +33,12 @@ export default ({ config }) => {
         : isStaging
         ? "com.expoDemoApp.staging"
         : "com.expoDemoApp",
+      googleServicesFile:
+        env === "development"
+          ? "./firebase/dev/GoogleService-Info.plist"
+          : env === "staging"
+          ? "./firebase/staging/GoogleService-Info.plist"
+          : "./firebase/prod/GoogleService-Info.plist",
     },
 
     android: {
@@ -46,6 +52,12 @@ export default ({ config }) => {
         foregroundImage: "./assets/adaptive-icon.png",
         backgroundColor: "#ffffff",
       },
+      googleServicesFile:
+        env === "development"
+          ? "./firebase/dev/google-services.json"
+          : env === "staging"
+          ? "./firebase/staging/google-services.json"
+          : "./firebase/prod/google-services.json",
 
       edgeToEdgeEnabled: true,
     },

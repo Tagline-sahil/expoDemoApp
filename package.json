@@ -8,8 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "build:dev": "eas build --profile development --platform android",
-    "build:staging": "eas build --profile staging --platform android",
-    "build:prod": "eas build --profile production --platform android",
+    "build:staging": "eas build --profile staging --platform android --local",
+    "build:prod": "eas build --profile production --platform android --local",
     "update:dev": "eas update --channel dev",
     "update:staging": "eas update --channel staging",
     "update:prod": "eas update --channel production"

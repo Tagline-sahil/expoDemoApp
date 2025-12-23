@@ -11,7 +11,10 @@
       "env": {
         "EXPO_PUBLIC_APP_ENV": "development"
       },
-      "channel": "dev"
+      "channel": "dev",
+      "android": {
+        "buildType": "apk"
+      }
     },
 
     "staging": {
@@ -19,7 +22,10 @@
       "env": {
         "EXPO_PUBLIC_APP_ENV": "staging"
       },
-      "channel": "staging"
+      "channel": "staging",
+      "android": {
+        "buildType": "apk"
+      }
     },
 
     "production": {
@@ -27,7 +33,10 @@
       "env": {
         "EXPO_PUBLIC_APP_ENV": "production"
       },
-      "channel": "production"
+      "channel": "production",
+      "android": {
+        "buildType": "apk"
+      }
     }
   },
 

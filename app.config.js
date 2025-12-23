@@ -7,6 +7,14 @@ export default ({ config }) => {
   return {
     ...config,
 
+    updates: {
+      url: "https://u.expo.dev/c2c9931f-436c-4933-8ef9-901e4b54441c",
+    },
+
+    runtimeVersion: {
+      policy: "appVersion",
+    },
+
     name: isDev
       ? "expoDemoApp Dev"
       : isStaging

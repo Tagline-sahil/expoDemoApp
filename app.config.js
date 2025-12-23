@@ -4,6 +4,12 @@ export default ({ config }) => {
   const isDev = env === "development";
   const isStaging = env === "staging";
 
+  const appIcon = isDev
+    ? "./assets/icon.png"
+    : isStaging
+    ? "./assets/staging.png"
+    : "./assets/prod.png";
+
   return {
     ...config,
 
@@ -24,7 +30,7 @@ export default ({ config }) => {
     slug: "expoDemoApp",
     version: "1.0.0",
     orientation: "portrait",
-    icon: "./assets/icon.png",
+    icon: appIcon,
     userInterfaceStyle: "light",
     newArchEnabled: true,
 
@@ -57,7 +63,7 @@ export default ({ config }) => {
         : "com.expoDemoApp",
 
       adaptiveIcon: {
-        foregroundImage: "./assets/adaptive-icon.png",
+        foregroundImage: appIcon,
         backgroundColor: "#ffffff",
       },
       googleServicesFile:

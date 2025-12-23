@@ -24,6 +24,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c2c9931f-436c-4933-8ef9-901e4b54441c"
+      }
+    },
+    "owner": "tagline_sahil"
   }
 }
